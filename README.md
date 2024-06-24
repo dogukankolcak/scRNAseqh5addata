@@ -1,4 +1,4 @@
-^# Single-Cell RNA Sequencing Analysis of NMDAR Expression in the Human Hippocampus
+# Single-Cell RNA Sequencing Analysis of NMDAR Expression in the Human Hippocampus
 ## Overview
 This Python project focuses on analyzing single-cell RNA sequencing (scRNA-seq) data to investigate the expression of N-methyl-D-aspartate receptors (NMDARs) in the human hippocampus. The analysis is divided into two main parts:
 
