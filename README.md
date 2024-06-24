@@ -20,17 +20,16 @@ This part of the project focuses on analyzing scRNA-seq data from a specific reg
 4. **Visualization:** Generate various plots (e.g., PCA, Violin plots, UMAP, Scatter plots, Dot plots, Interactive PCA) to visualize gene expression.
 
 Usage:
-
+`
 python SingleCellAnalysis.py rostralca3.h5ad GRIN1,GRIN2A,GRIN2B,GRIN2C,GRIN2D,GRIN3A,GRIN3B --groupby cell_type --plots all
-
+`
 ## Data Merging
 This part of the project combines scRNA-seq data from multiple regions of the hippocampus to analyze NMDAR expression across the entire hippocampus.
 
 Usage:
-
-sh
-Kodu kopyala
+`
 python Merging_Code.py --api_files_regions "<API_LINK_1>" "<API_LINK_2>" ... --genes ENSG00000176884 ENSG00000183454 ENSG00000273079 ENSG00000161509 ENSG00000105464 ENSG00000198785 ENSG00000116032 --plot_type top_genes --cell_type neuron
+`
 
 ## Results
 The results include visualizations of NMDAR gene expression across different cell types in the hippocampus. The analysis provides insights into the distribution and expression levels of NMDARs in specific cell types, aiding in understanding their roles in synaptic function and neurological disorders.
@@ -43,17 +42,18 @@ For a detailed description of the methods and results, please refer to the proje
 
 ## How to Run
 Install required dependencies:
-sh
-Kodu kopyala
+
+`
 pip install -r requirements.txt
-Run the SingleCellAnalysis:
-sh
-Kodu kopyala
+`
+# Run the SingleCellAnalysis:
+`
 python SingleCellAnalysis.py <h5ad_file> <gene_list> --groupby <groupby> --plots <plots>
-Run the Data Merging script:
-sh
-Kodu kopyala
+`
+# Run the Data Merging script:
+`
 python Merging_Code.py --api_files_regions "<API_LINK_1>" "<API_LINK_2>" ... --genes <gene_ids> --plot_type <plot_type> --cell_type <cell_type>
+`
 
 ## Contact
 For any questions or contributions, please contact Doğukan Kolçak.
